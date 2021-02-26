@@ -1,0 +1,9 @@
+{
+	"firstName": "Chuck",
+	"lastName": "Norris",
+	"age": 75,
+	"password": "noneed",
+	"creatableSelectTest": ["test"],
+	"selectTest": ["Yes", "No"],
+	"telephone": ""
+}
