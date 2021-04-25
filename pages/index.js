@@ -10,6 +10,7 @@ export default () => {
             schema={schema} 
             uiSchema={uiSchema} 
             formData={formData} 
+            onChange={() => console.log('form change invoked')}
             onSubmit={() => console.log('form submitted')}
           />;
 };
