@@ -3,14 +3,15 @@ import MaterialJsonSchemaForm from 'react-jsonschema-form-material-ui';
 
 import schema from '../simple/schema.json';
 import uiSchema from '../simple/ui-schema.json';
-import formData from '../simple/form-data.json';
+import givenFormData from '../simple/form-data.json';
 
 export default () => {
+  const [formData, setFormData] = React.useState(givenFormData);
   return <MaterialJsonSchemaForm 
             schema={schema} 
             uiSchema={uiSchema} 
             formData={formData} 
-            onChange={() => console.log('form change invoked')}
+            onChange={({ formData }) => setFormData(formData)}
             onSubmit={() => console.log('form submitted')}
           />;
 };
