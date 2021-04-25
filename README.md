@@ -9,9 +9,8 @@ npm start
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-Example Code can be [seen here](./pages/index.js)
-```
-
+#### Example Code can be [seen here](./pages/index.js)
+```jsx
 import React from 'react';
 import MaterialJsonSchemaForm from 'react-jsonschema-form-material-ui';
 
