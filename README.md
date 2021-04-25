@@ -1,4 +1,4 @@
-## Intro
+## NextJS - React JSONSchema Form Material UI - Example
 
 This is a small demo project showcasing compatiblity of nextjs with [react-jsonschema-form-material-ui](https://github.com/vip-git/react-jsonschema-form-material-ui)
 
