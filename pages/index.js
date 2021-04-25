@@ -6,5 +6,10 @@ import uiSchema from '../simple/ui-schema.json';
 import formData from '../simple/form-data.json';
 
 export default () => {
-  return <MaterialJsonSchemaForm schema={schema} uiSchema={uiSchema} formData={formData} />;
+  return <MaterialJsonSchemaForm 
+            schema={schema} 
+            uiSchema={uiSchema} 
+            formData={formData} 
+            onSubmit={() => console.log('form submitted')}
+          />;
 };
