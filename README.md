@@ -18,12 +18,30 @@ import schema from '../simple/schema.json';
 import uiSchema from '../simple/ui-schema.json';
 import givenFormData from '../simple/form-data.json';
 
+const theme = {
+  palette: {
+    primary: {
+      light: '#757ce8',
+      main: '#3f50b5',
+      dark: '#002884',
+      contrastText: '#fff',
+    },
+    secondary: {
+      light: '#ff7961',
+      main: '#f44336',
+      dark: '#ba000d',
+      contrastText: '#000',
+    },
+  },
+};
+
 export default () => {
   const [formData, setFormData] = React.useState(givenFormData);
   return <MaterialJsonSchemaForm 
             schema={schema} 
             uiSchema={uiSchema} 
             formData={formData} 
+            theme={theme} // Optional
             onChange={({ formData }) => setFormData(formData)}
             onSubmit={() => console.log('form submitted')}
           />;
